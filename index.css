@@ -40,9 +40,8 @@
 
 /* Intro Section */
 .intro{
-    background: url('assets/Vector.png') no-repeat;
+    background: url('https://i.ibb.co/26dyq7b/Vector.png') no-repeat;
     background-size: 100%;
-    /* background-position-x: center; */
     background-position-y: -130px;
     background-color: var(--dark-blue);
     color: var(--text-light);
