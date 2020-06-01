@@ -222,6 +222,10 @@ p.text-monospace{
     .col-lg-6.pix{
         margin-top: 24px;
     }
+    .learning-pics img{
+        height: auto;
+        width: 100%;
+    }
 }
 @media screen and (max-width:600px){
     .activities{
@@ -251,6 +255,7 @@ p.text-monospace{
     .orange.fun{
         display: inline-block!important;
     }
+    
     .learning-pics>div:nth-child(2) img{
         left: 30px;
     }
