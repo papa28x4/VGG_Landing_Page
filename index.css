@@ -1,4 +1,4 @@
-*{
+html, *{
     box-sizing: border-box;
 }
 
@@ -10,13 +10,29 @@
     --text-dark: #000000;
 }
 
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/*Particles*/
+#particles-js{
+    position: absolute;
+    width: 98vw;
+}
+.particles-js-canvas-el{
+    width: 98vw!important;
+}
+
+/*End of Particles/
+
 /*Navbar*/
 .navbar-brand{
     padding-top: 0.55rem;
 }
 .navbar.vgg-nav{
     background-color: var(--dark-blue)!important;
-    padding: 20px 125px 0px;
+    padding: 15px 125px 5px;
 }
 
 .nav-item:not(:last-of-type){
@@ -47,8 +63,9 @@
     color: var(--text-light);
     display: flex;
     align-items: center;
+    margin-top: 65px;
     padding: 0px 125px 0px;
-    height: 95vh
+    height: 95vh;
 }
 .intro>div{
     width:100%;
@@ -56,7 +73,7 @@
 .intro-text>div{
     letter-spacing: 0.175rem;
 }
-.small{
+.intro-text .small{
     display: none;
 }
 
@@ -84,6 +101,9 @@
 }
 
 @media screen and (max-width:992px){
+    .intro{
+        margin-top: 0px;
+    }
     .intro-row{
         display: flex;
         flex-direction: column-reverse!important;
@@ -92,10 +112,10 @@
     .intro-text>div{
         text-align: center;
     }
-    .small{
+    .intro-text .small{
         display: initial;
     }
-    .big{
+    .intro-text .big{
         display: none
     }
     .illustration-parent{
@@ -109,7 +129,6 @@
     .illustration-parent>div{
        text-align: center;
     }
-    
 }
 
 @media screen and (max-width:650px){
@@ -118,6 +137,15 @@
     }
     .intro{
         padding: 60px 0px 80px;
+    }
+    
+}
+
+@media screen and (max-width:420px){
+    .intro-text p{
+        padding-left: 3.8vw;
+        padding-right: 3.8vw;
+        font-size: 3.5vw;
     }
     
 }
@@ -195,6 +223,53 @@ p.text-monospace{
         margin-top: 24px;
     }
 }
+@media screen and (max-width:600px){
+    .activities{
+        padding: 40px 16px 25px;
+    }
+    .activities .media-body h5{
+        font-size: 18px;
+    }
+    .activities .media-body br{
+        display: none;
+    }
+    .work-n-play br{
+        display: none;
+    }
+    .learning-pics{
+        align-items: center;
+    }
+    .learning-pics .col-9{
+        padding-right: 0;
+    }
+    .learn-and-fun{
+        font-size: 9vw;
+    }
+    .learn-and-fun br{
+        display: none;
+    }
+    .orange.fun{
+        display: inline-block!important;
+    }
+    .learning-pics>div:nth-child(2) img{
+        left: 30px;
+    }
+    .learning-pics>div:nth-child(3) img{
+        left: -30px;
+    }
+}
+
+@media screen and (max-width:374px){
+    .activities .media-body h5{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .activities .media-body{
+        font-size: 15px;
+    }
+}
+    
+
 /* End of Activities Section */
 
 /*Start of Tracks*/
@@ -229,6 +304,18 @@ p.text-monospace{
         margin-bottom: 0px;
     }
 }
+@media screen and (max-width:600px){
+    .tracks{
+        padding: 30px 16px;
+    }
+    
+    .tracks .green-text{
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 42px;
+        letter-spacing: -0.025em;
+    }
+}
 /* End of Tracks */
 
 /* Start of Instructors*/
@@ -236,6 +323,7 @@ p.text-monospace{
     min-height: 500px;
     padding: 50px 125px 170px ;
 }
+
 .owl-theme.row{
     width:100%;
 }
@@ -260,6 +348,12 @@ p.text-monospace{
     transform: translateX(-50%);
     width: 119px!important;
 }
+
+@media screen and (max-width:600px){
+    .instructors h2{
+        font-size: 5.5vw;
+    }
+}
 /*End of Instructors*/
 
 /*Start of Footer */
@@ -281,11 +375,14 @@ footer{
 }
 .subscribe>div{
     background: linear-gradient(284.79deg, #81F281 5.46%, #4CB44C 69.39%);
-    padding: 30px 50px;
+    padding: 30px 3vw;
+}
+.subscribe h3 .small{
+    display: none;
 }
 .subscribe #subcribe-input{
     width: 100%;
-    padding: 15px 50px;
+    padding: 15px 3vw;
     border-radius: 42px;
     background: #81F281;
     opacity: 0.4;
@@ -296,7 +393,7 @@ footer{
     outline: none;
 }
 .subscribe #btn{
-    padding: 15px 30px;
+    padding: 15px 2.4vw;
     background:  var(--text-light);
     border-radius: 42px;
     border: none;
@@ -309,5 +406,104 @@ footer{
 }
 .social img:not(:last-of-type){
     margin-right: 1em;
+}
+@media screen and (min-width:993px) and (max-width: 1350px){
+    
+    .subscribe .row{
+        padding: 30px 2vw;
+    }
+    .subscribe .row>div{
+       padding: 0 10px
+    }
+    .subscribe #subcribe-input{
+        padding: 15px 30px;
+    }
+
+    .subscribe #btn{
+        padding: 15px 15px;
+    }
+}
+@media screen and (max-width:992px){
+    .subscribe{
+        top: -167px;
+    }
+    .subscribe>div{
+        padding: 30px 3vw;
+    }
+    .subscribe h3 .small{
+        display: initial
+    }
+    .subscribe h3 .big{
+        display: none
+    }
+    .subscribe #btn{
+        padding: 15px 20px;
+    }
+}
+@media screen and (min-width:601px) and (max-width:992px){
+    footer{
+        padding: 195px 0 20px;
+    }
+    .vgg-info-div {
+        flex: 0 0 100%!important;
+        max-width: 100%!important;
+    }
+    .bottom-half{
+        padding-left: 12.5vw;
+        padding-right: 12.5vw;
+    }
+}
+@media screen and (max-width:600px){
+    .bottom-half{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .bottom-half br{
+        display: none;
+    }
+    .subscribe{
+        padding: 0 16px;
+        width: 100vw;
+        right: 0px;
+        left: 0px;
+        background:none;
+        top: -145px;
+    }
+    .subscribe .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .subscribe h3{
+        font-size: 5vw;
+    }
+    .subscribe p{
+        font-size: 3.8vw;
+    }
+    .vgg-info{
+        padding-right: 6vw;
+        font-size: 3vw;
+    }
+    .vgg-info+p{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:374px){
+    .bottom-half small{
+        font-size: 11px;
+    }
+    .social img:not(:last-of-type){
+        margin-right: 0.5em;
+    }
+}
+@media screen and (max-width:340px){
+    .bottom-half{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .social img:not(:last-of-type){
+        margin-right: 0.3em;
+    }
 }
 /*End of Footer*/
