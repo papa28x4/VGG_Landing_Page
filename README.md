@@ -1,5 +1,3 @@
-# VGG_Landing_Page
-### Just some practice to sharpen my Frontend skill
 <div align="center">
   <h1>VGG_Landing_Page</h1>
   <p>Just some practice to sharpen my Frontend skill</p>
