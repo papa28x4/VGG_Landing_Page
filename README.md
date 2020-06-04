@@ -2,4 +2,4 @@
 Built this to work on my Frontend skill
 <hr><br>
 
-![Landing_Page](https://i.ibb.co/M1jdKsk/vgg-landing-page.png")
+![Landing_Page](https://i.ibb.co/ky1Y9nK/vgg-landing-page2.png)
