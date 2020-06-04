@@ -6,5 +6,5 @@ Built this to work on my Frontend skill
 <img style="float: right;" src="https://i.ibb.co/ky1Y9nK/vgg-landing-page2.png">
 ### Sublime's custom image
 <p align="center">
-  <img src="https://github.com/waldyr/Sublime-Installer/blob/master/sublime_text.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://i.ibb.co/ky1Y9nK/vgg-landing-page2.png?raw=true" alt="Sublime's custom image"/>
 </p>
